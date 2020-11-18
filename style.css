@@ -1,0 +1,91 @@
+@font-face {
+    font-family: BebasNeue;
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('fonts/bebasneueregular.woff2') format('woff2'), url('fonts/bebasneueregular.woff') format('woff'), url('fonts/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.main {
+	background-color: white;
+	border: solid 10px #EBEBEB;
+	margin: 0 auto;
+	width: 350px;
+	height: 360px;
+	padding: 10px;
+}
+
+.plans {
+	font-family: BebasNeue;
+	
+}
+
+.lp {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;	
+}
+
+
+.eachname {
+	position: relative;
+	display: inline-flex;
+	vertical-align: 5px;
+	width: 100%;
+	line-height: 20px;
+	font-size: 20px;
+	margin-left: 15px;
+}
+
+.eachprice {
+	position: absolute;
+	display: inline-flex;
+	justify-content: flex-end;
+	width: 100%;
+	vertical-align: 0px;
+
+}
+
+label.castomr input {
+	display: none;
+}
+
+
+input:checked + span {
+	border: 2px solid #C4DDE6;
+	background-color: #EBF4F7;
+}
+
+.total {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.total span {
+	color: #3388A8;
+}
+
+.buynow {
+	background-color: green;
+	border-radius: 30px;
+	color: white;
+	padding: 10px;
+	width: 130px;
+}
+
+.number {
+	text-align: center;
+	width: 100%;
+}
+
+.selplan {
+	margin-top: 35px;
+	font-size: 15px;
+	color: #3388A8;
+}
+
+.blue {
+	font-family: BebasNeue;
+	font-size: 20px;
+}

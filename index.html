@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Test2</title>
+</head>
+<body>
+	<div class="main">
+	<form>
+		<div class="plans" id="plans">
+			<p class="lp" onchange="sel (this)">
+				<label for="radio" id="p" class="castomr">
+					<input type="radio" id="radio" name="radio" value="13" checked onchange = 'OnSelectChange (this)'>
+					<span class="eachname">
+							LICENSE PLAN #1
+						<span class="eachprice">
+							$13 per license
+						</span>	
+					</span>			</label>
+				
+				<label for="radio1" class="castomr">
+				
+					<input type="radio" id="radio1" name="radio" value="22" onchange = 'OnSelectChange (this)'>					
+					<span class="eachname">
+						LICENSE PLAN #2
+					<span class="eachprice">
+						$22 per license
+					</span>
+				</span>
+			</label>
+				<label for="radio2" class="castomr">
+					<input type="radio" id="radio2" name="radio" value="34" onchange = 'OnSelectChange (this)'>
+					<span class="eachname">
+						LICENSE PLAN #3
+					<span class="eachprice">
+						$34 per license
+					</span>
+				</span>
+			</label>
+			</p>
+			<hr>
+		</div>
+		<div class="number">
+			<div name="value"> Number of license:
+				<select id="select" for="val" onchange = 'OnSelectChange (this)'>
+					<option value="1" name='val' id="val">1</option>
+					<option value="2" name='val' id="val">2</option>
+					<option value="3" name='val' id="val">3</option>
+					<option value="4" name='val' id="val">4</option>
+					<option value="5" name='val' id="val">5</option>
+					<option value="6" name='val' id="val">6</option>
+					<option value="7" name='val' id="val">7</option>
+					<option value="8" name='val' id="val">8</option>
+					<option value="9" name='val' id="val">9</option>
+					<option value="10" name='val' id="val">10</option>
+					<option value="11" name='val' id="val">11</option>
+					<option value="12" name='val' id="val">12</option>
+			</select>
+			</div>
+			<hr>
+		</div>
+		<div class="total">
+			<p class="blue">TOTAL: 
+				<span class="out" id="out">$13</span>
+				<span style="vertical-align: 4px;">US</span>
+				<script type="text/javascript">
+					function OnSelectChange(select) {
+						var	vol = document.querySelector('input[name="radio"]:checked').value;
+	    				var select = document.querySelector('select').value;
+	    				var sum = vol * select;
+						document.getElementById('out').innerHTML='$' + sum;
+	};
+ 				</script>
+ 				<script type="text/javascript">
+ 					function sel() {
+    var rad=document.getElementsByName('radio');
+    for (var i=0;i<rad.length; i++) {
+        if (rad[i].checked) {
+            document.getElementById('sel').innerHTML="Selected plan: #" + (i + 1);
+        }
+    }
+}
+ 				</script>
+ 			</p>
+			<button type="submit" formaction="https://thumbs.gfycat.com/AgreeableEsteemedBuck-size_restricted.gif" class="buynow" >BUY NOW</button>
+			<p id='sel' class="selplan">Selected plan: #1</p>
+		</div>
+	</form>
+	</div>
+</body>
+</html>
+
